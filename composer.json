@@ -1,0 +1,38 @@
+{
+	"name": "daltonsutton/php-framework",
+	"description": "A tiny PHP framework flavored with Illuminate components.",
+	"type": "project",
+	"license": "MIT",
+	"keywords": [
+		"framework",
+		"php",
+		"tiny",
+		"laravel"
+	],
+	"authors": [
+		{
+			"name": "Dalton Sutton",
+			"email": "dalton@sutton.io"
+		}
+	],
+	"require": {
+		"php": ">=8.0",
+		"illuminate/container": "^8.0",
+		"illuminate/contracts": "^8.0",
+		"illuminate/events": "^8.0",
+		"illuminate/filesystem": "^8.0",
+		"illuminate/view": "^8.0",
+		"illuminate/support": "^8.0",
+		"illuminate/http": "^8.0",
+		"illuminate/database": "^8.0",
+		"illuminate/console": "^8.0",
+		"pecee/simple-router": "5.2.0.1",
+		"spatie/ignition": "^1.4"
+	},
+	"autoload": {
+		"psr-4": {
+			"System\\": "system/",
+			"Models\\": "app/Models/"
+		}
+	}
+}

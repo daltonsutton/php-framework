@@ -1,0 +1,5 @@
+/vendor
+/node_modules
+/app/stoage/cache
+.env
+*.lock

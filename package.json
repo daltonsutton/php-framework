@@ -1,0 +1,19 @@
+{
+  "name": "php-framework",
+  "version": "1.0.0",
+  "description": "A PHP framework",
+  "author": {
+    "name": "Dalton Sutton",
+    "email": "dalton@sutton.io"
+  },
+  "scripts": {
+    "dev": "npx tailwindcss -i ./app/views/assets/css/tailwind.css -o ./public/assets/app.min.css && minify ./app/views/assets/js/app.js > ./public/assets/app.min.js",
+    "watch": "npx tailwindcss -i ./app/views/assets/css/tailwind.css -o ./public/assets/app.min.css --watch && minify ./app/views/assets/js/app.js > ./public/assets/app.min.js",
+    "production": "npx tailwindcss -i ./app/views/assets/css/tailwind.css -o ./public/assets/app.min.css --minify && minify ./app/views/assets/js/app.js > ./public/assets/app.min.js"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.3.1"
+  }
+}

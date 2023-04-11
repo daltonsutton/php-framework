@@ -1,0 +1,21 @@
+#!/usr/bin/env php
+<?php
+
+require_once __DIR__.'/vendor/autoload.php';
+require_once __DIR__.'/system/Commands/ClearViewCache.php';
+
+use Illuminate\Container\Container;
+use Illuminate\Events\Dispatcher;
+use Illuminate\Console\Application;
+use System\Commands\ClearViewCache;
+
+$container = new Container;
+$events = new Dispatcher($container);
+
+$artisan = new Application($container, $events, 'v1.0.0');
+$artisan->setName('PHP Framework');
+
+// Bind a command
+$artisan->resolve(ClearViewCache::class);
+
+$artisan->run();
