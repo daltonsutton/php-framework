@@ -3,3 +3,4 @@
 /app/stoage/cache
 .env
 *.lock
+.DS_Store
